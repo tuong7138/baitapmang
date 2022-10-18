@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //bai1
+    let arr1=['red','green','yellow'];
+    let noichu='';
+    document.write(arr1);
+    for(let i=0;i<arr1.length;i++){
+        noichu+=arr1[i]+'--';
+    }
+    document.write(noichu);
+    //bai2
+    let nhap=prompt('nhap so bat ky');
+    let arr2=[];
+    let arr2h=[];
+        arr2=Array.from(nhap);
+        for(let i=0;i<arr2.length;i++){
+            if(arr2[i]%2==0){
+                arr2h[i]='--'+arr2[i]+'--';
+            }
+            else{
+                arr2h[i]=arr2[i];
+            }
+        }
+        
+    document.write(arr2);
+    document.write('<br>')
+    document.write(arr2h);
+    //baitap3
+    let arrup=[];
+    let arrdown=[];
+    let up='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let down='abcdefghijklmnopqrstuvwxyz';
+    arrup=Array.from(up);
+    arrdown=Array.from(down);
+    let nhap1=prompt('nhap bat ky');
+    let nhap2=[];
+    let result=[];
+    nhap2=Array.from(nhap1);
+    for(let i=0;i<nhap2.length;i++){
+        for(let j=0;j<arrup.length;j++){
+            if(nhap2[i]==arrup[j]){
+                result[i]=arrdown[j];
+            }
+            else if(nhap2[i]==arrdown[j]){
+                result[i]=arrup[j];
+            }
+        }
+    }
+    document.write('<br>');
+    document.write(nhap2);
+    document.write('<br>');
+
+    document.write(result);
+</script>
