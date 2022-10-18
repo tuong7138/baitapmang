@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let arr1=[];
+   for(let i=0;i<100;i++){
+    arr1[i]=Math.floor(Math.random()*100);
+   }
+    function fimax(arr1){
+        let max=arr1[0];
+        for(let i=0;i<100;i++){
+            max=(max<arr1[i])?arr1[i]:max;
+        }
+        return max;
+    }
+    function fimin(arr1){
+        let min=arr1[0];
+        for(let i=0;i<100;i++){
+            min=(min>arr1[i])?arr1[i]:min;
+        }
+        return min;
+    }
+    document.write(fimax(arr1));
+    document.write('<br>');
+    document.write(fimin(arr1));
+   
+</script>
