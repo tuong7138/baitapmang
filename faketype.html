@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GÕ CHẬM THÔI </h1>
+    <textarea name="" id="fa-ke" cols="30" rows="10" onkeyup="fake()"></textarea>
+    <h2 id="test">mo phong</h2>
+    <h2 id="test2">so ky tu</h2>
+</body>
+</html>
+<script>
+    let phake='vai lol luon ban toi';
+    let arr2=Array.from(phake);
+    let gan='';
+    //document.getElementById('test').innerHTML=arr2.length;
+
+function fake(){
+    let tt=document.getElementById('fa-ke').value;
+    document.getElementById('test2').innerHTML=tt.length;
+
+    if(tt.length>0){
+   for(let i=0;i<tt.length;i++){
+   if(tt.length>20){
+    document.getElementById('fa-ke').value='';
+    
+    gan='';
+   } 
+   else{
+    gan+=arr2[i];
+    document.getElementById('fa-ke').value=gan;  
+   }
+}
+document.getElementById('test').innerHTML=gan;
+gan='';
+}
+
+    
+}
+</script>
+
+   
